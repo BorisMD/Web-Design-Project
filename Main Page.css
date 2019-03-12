@@ -20,3 +20,7 @@ html, body {
     -webkit-margin-top-collapse: discard;
     text-align: center;
 }
+
+.chart-div {
+    display: inline;
+}

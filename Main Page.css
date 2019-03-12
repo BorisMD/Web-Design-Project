@@ -21,6 +21,11 @@ html, body {
     text-align: center;
 }
 
-.chart-div {
-    display: inline;
+.chart-parent-div {
+   display: flex; 
+}
+
+.chart-child-div {
+    flex: 1;
+    text-align: center;
 }

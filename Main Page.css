@@ -20,6 +20,10 @@ html, body {
     margin: auto;
 }
 
+.top-bar-list:hover {
+    color: white;
+}
+
 .top-bar {
     background: url(brand-logo.PNG) no-repeat, black;
     background-position-x: 25%; 

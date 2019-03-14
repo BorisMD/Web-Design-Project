@@ -9,7 +9,12 @@ html, body {
     font-family: "Open Sans", sans-serif;
   }
 
-.top-bar-list {
+.nav-link {
+    color: rgba(255,255,255,.8); 
+    text-decoration: none;
+}
+
+.nav-bar-list {
     display: inline-block;
     color: rgba(255,255,255,.8);
     font-size: 16px;
@@ -20,11 +25,11 @@ html, body {
     margin: auto;
 }
 
-.top-bar-list:hover {
+.nav-bar-list:hover {
     color: white;
 }
 
-.top-bar {
+.nav-bar {
     background: url(brand-logo.PNG) no-repeat, black;
     background-position-x: 25%; 
     height: 50px;

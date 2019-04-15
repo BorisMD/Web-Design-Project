@@ -28,6 +28,10 @@ html, body {
     color: white;
 }
 
+.nav-link:hover {
+    color: white;
+}
+
 .nav-bar {
     background: url(brand-logo.PNG) no-repeat, black;
     background-position-x: 25%; 

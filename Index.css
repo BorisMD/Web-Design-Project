@@ -48,3 +48,13 @@ html, body {
     flex: 1;
     text-align: center;
 }
+
+.coins-content{
+    width:  1060px;
+    height: 3000px;
+    margin: auto auto;
+}
+
+h3{
+    color:black;
+}

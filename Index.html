@@ -17,22 +17,73 @@
     </div>
         <div class="chart-parent-div">
         <div class="chart-child-div" id="chart">
-          <div id="gobtc-widget-chart" style="background-color:#fcfcfc" data-lang="en" width="5%" height="5%"></div>
-          <script type="text/javascript" src="https://widgets.gobitcoin.io/chart.js"></script></div>
-        <div class="chart-child-div" id="chart">Chart 2</div> 
-        <div class="chart-child-div" id="chart">Chart 3</div> 
-        <div class="chart-child-div" id="chart">Chart 4</div> 
+          <script type="text/javascript">
+            baseUrl = "https://widgets.cryptocompare.com/";
+            var scripts = document.getElementsByTagName("script");
+            var embedder = scripts[ scripts.length - 1 ];
+            (function (){
+            var appName = encodeURIComponent(window.location.hostname);
+            if(appName==""){appName="local";}
+            var s = document.createElement("script");
+            s.type = "text/javascript";
+            s.async = true;
+            var theUrl = baseUrl+'serve/v1/coin/chart?fsym=BTC&tsym=USD';
+            s.src = theUrl + ( theUrl.indexOf("?") >= 0 ? "&" : "?") + "app=" + appName;
+            embedder.parentNode.appendChild(s);
+            })();
+            </script>
+            </div>
+        <div class="chart-child-div" id="chart">
+          <script type="text/javascript">
+          baseUrl = "https://widgets.cryptocompare.com/";
+          var scripts = document.getElementsByTagName("script");
+          var embedder = scripts[ scripts.length - 1 ];
+          (function (){
+          var appName = encodeURIComponent(window.location.hostname);
+          if(appName==""){appName="local";}
+          var s = document.createElement("script");
+          s.type = "text/javascript";
+          s.async = true;
+          var theUrl = baseUrl+'serve/v1/coin/chart?fsym=ETH&tsym=USD';
+          s.src = theUrl + ( theUrl.indexOf("?") >= 0 ? "&" : "?") + "app=" + appName;
+          embedder.parentNode.appendChild(s);
+          })();
+          </script>
+          </div> 
+        <div class="chart-child-div" id="chart">
+          <script type="text/javascript">
+          baseUrl = "https://widgets.cryptocompare.com/";
+          var scripts = document.getElementsByTagName("script");
+          var embedder = scripts[ scripts.length - 1 ];
+          (function (){
+          var appName = encodeURIComponent(window.location.hostname);
+          if(appName==""){appName="local";}
+          var s = document.createElement("script");
+          s.type = "text/javascript";
+          s.async = true;
+          var theUrl = baseUrl+'serve/v1/coin/chart?fsym=XRP&tsym=USD';
+          s.src = theUrl + ( theUrl.indexOf("?") >= 0 ? "&" : "?") + "app=" + appName;
+          embedder.parentNode.appendChild(s);
+          })();
+          </script>
+          </div> 
+        <div class="chart-child-div" id="chart">
+          <script type="text/javascript">
+          baseUrl = "https://widgets.cryptocompare.com/";
+          var scripts = document.getElementsByTagName("script");
+          var embedder = scripts[ scripts.length - 1 ];
+          (function (){
+          var appName = encodeURIComponent(window.location.hostname);
+          if(appName==""){appName="local";}
+          var s = document.createElement("script");
+          s.type = "text/javascript";
+          s.async = true;
+          var theUrl = baseUrl+'serve/v1/coin/chart?fsym=EOS&tsym=USD';
+          s.src = theUrl + ( theUrl.indexOf("?") >= 0 ? "&" : "?") + "app=" + appName;
+          embedder.parentNode.appendChild(s);
+          })();
+          </script></div> 
         </div>
           <iframe src="https://www.widgets.investing.com/top-cryptocurrencies?theme=lightTheme" width="100%" height="512px" frameborder="0" allowtransparency="true" marginwidth="0" marginheight="0"></iframe>
-          <!-- <script>
-            function getData() {
-              return Math.random();
-            }
-
-            Plotly.plot('chart',[{
-              y:[getData()],
-              type:'line'
-            }]);
-          </script>-->
 </body>
 </html>
